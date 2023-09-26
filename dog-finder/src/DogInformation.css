@@ -1,0 +1,14 @@
+.DogInformation-img {
+    /* width: 400px;
+    height: 600px; */
+    width: 30%;
+    height: 30%;
+    border: #282c34 solid 6px;
+    border-radius: 20px;
+
+}
+
+.DogInformation-p {
+    font-size: larger;
+}
+

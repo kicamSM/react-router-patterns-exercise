@@ -1,23 +1,20 @@
 import React from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
-// import Home from "./Home";
-// import About from "./About";
+import Dogs from "./Dogs";
+import DogInformation from "./DogInformation";
+import FindDog from "./findDog";
 // import Contact from "./Contact";
 // import BlogHome from "./BlogHome";
 // import Post from "./Post";
 
-function Routes() {
-//   return (
-//     <Switch>
-//       <Route exact path="/about"><About /></Route>
-//       <Route exact path="/contact"><Contact /></Route>
-//       <Route exact path="/blog/:slug"><Post /></Route>
-//       <Route exact path="/blog"><BlogHome /></Route>
-//       <Route exact path="/"><Home /></Route>
-//       <Redirect to="/" />
-//     </Switch>
-//   );
-return "these are my routes!"
+function Routes({dogs}) {
+    return (
+        <Switch>
+    
+            <Route exact path="/dogs/:name"><FindDog dogs={dogs} /></Route>
+            <Route exact path = "/dogs"><Dogs /></Route>
+        </Switch>
+    )
 }
 
 export default Routes;
