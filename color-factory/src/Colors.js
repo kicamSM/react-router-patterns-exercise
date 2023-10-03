@@ -3,12 +3,9 @@ import { NavLink } from "react-router-dom";
 import NewColorForm from "./NewColorForm";
 import { v4 as uuid } from "uuid";
 
-function Colors({colors, setColors, state}) {
+function Colors({colors, setColors}) {
 
-    // const links = state?.colors || colors;
-    console.log('state in colors:', state)
-
-    const [showForm, setShowForm] = useState(false);
+    // const [showForm, setShowForm] = useState(false);
 
 
     console.log('colors in Colors:', colors)
@@ -32,15 +29,15 @@ function Colors({colors, setColors, state}) {
         );
       });
 
-    const addColor  = (color) => {
-        console.log('color in addColor:', color)
-        let colorValue = color['value'];
-        let colorName = color['color']
-        console.log('colorName:', colorName)
-        let newColor = {[colorName]: colorValue}
-        // console.log('newColor', newColor)
-        setColors((colors) => [...colors, newColor])
-    };
+    // const addColor  = (color) => {
+    //     console.log('color in addColor:', color)
+    //     let colorValue = color['value'];
+    //     let colorName = color['color']
+    //     console.log('colorName:', colorName)
+    //     let newColor = {[colorName]: colorValue}
+    //     // console.log('newColor', newColor)
+    //     setColors((colors) => [...colors, newColor])
+    // };
 
     console.log('colors in Colors!!!!', colors)
 
@@ -49,8 +46,8 @@ function Colors({colors, setColors, state}) {
         {/* <div>
             <NewColorForm addColor={addColor}/>
         </div> */}
-        <button onClick={() => setShowForm(!showForm)}>Color Form</button>
-        {showForm && <NewColorForm addColor={addColor} />}
+        {/* <button onClick={() => setShowForm(!showForm)}>Color Form</button>
+        {showForm && <NewColorForm addColor={addColor} />} */}
         <div>
             {links}
         <h1>Colors!</h1>

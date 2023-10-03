@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 /** Form for creating a new color to add to a list.
  *
@@ -11,6 +12,7 @@ const NewColorForm = ({ addColor }) => {
   // const INITIAL_STATE = { color: "" };
   const INITIAL_STATE = { color: "", value: "" };
   const [formData, setFormData] = useState(INITIAL_STATE);
+  const history = useHistory();
 
   /** Send {color} to parent
    *    & clear form. */
@@ -20,6 +22,7 @@ const NewColorForm = ({ addColor }) => {
     addColor(formData);
     console.log('formData:', formData)
     setFormData(INITIAL_STATE);
+    history.push("/colors");
   };
 
   /** Update local state w/curr state of input elem */
