@@ -6,8 +6,8 @@ import FindColor from './FindColor'
 
 
 function Routes() {
-    const [colors, setColors] = useState(['red', 'orange', 'blue']);
-    // const [colors, setColors] = useState([{red: '#ff0000'}, {orange: '#ffa500' }, {blue:'#0000ff'}]);
+    // const [colors, setColors] = useState(['red', 'orange', 'blue']);
+    const [colors, setColors] = useState([{red: '#ff0000'}, {orange: '#ffa500' }, {blue:'#0000ff'}]);
 
     console.log("colors in routes:", colors)
     // const ColorsContext = createContext(colors);

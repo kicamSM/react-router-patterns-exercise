@@ -1,4 +1,3 @@
-import Nav from './Nav'
 import './App.css';
 import Routes from './Routes.js'
 
@@ -7,8 +6,6 @@ function App() {
     <div className="App">
       <header className="App-header">Welcome to the color factory.</header>
       <div>
-        {/* <Nav colors={colors}/> */}
-        {/* <Nav /> */}
         <Routes />
       </div>
     </div>
