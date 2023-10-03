@@ -36,7 +36,7 @@ if (color) {
     if (currentColor) {
         return <ColorPage color={color} colorValue={colorValue} />;
       } else {
-        // return <Redirect to="/colors" />;
+        return <Redirect to="/colors" />;
         // return <Colors colors={colors}/>\
         // const navigate = useNavigate();
         // navigate('/colors', { state: { colors } });
